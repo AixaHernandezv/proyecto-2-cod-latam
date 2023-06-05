@@ -23,9 +23,9 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #fbfbfb;
+    background-color: #f5f5dc;
     font-size: 18px;
-    color: #0f0f0f;
+    color: #6334bc;
     /* yo:es importante poner el color o es el color por defecto? */
     line-height: 1.2;
     /*  yo: interlineado */
@@ -77,7 +77,8 @@ header {
 }
 
 #logo img {
-    width: 180px;
+    width: 78px;
+    
 }
 
 nav {
@@ -171,13 +172,13 @@ p {
 }
 
 .fondo-color-fuente {
-    background-color: #af599e;
-    color: #fbfbfb;
+    background-color: #6334bc;
+    color: #f5f5dc;
 
 }
 
 article {
-    background-color: rgba(175, 89, 158, 0.3);
+    background-color: rgba(99, 52, 188,0.2);
     border-radius: 10px;
     padding: 32px 0;
     margin-top: 90px;
