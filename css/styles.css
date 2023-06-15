@@ -166,8 +166,7 @@ article {
 
 
 div {
-    display: flex;
-    justify-content: space-around;
+ 
     margin-top: 36px;
 
 }
@@ -189,7 +188,15 @@ footer {
 
 @media (max-width:767px) {
 
+    #menuIcon{
+        margin-right: 24px;
+    }
 
+    #navBar{
+        display: none;
+    }
+
+   
     #foto img {
         width: 35%;
     }
@@ -208,7 +215,10 @@ footer {
 
 @media (min-width:768px) and (max-width:1199px) {
 
-
+    #menuIcon{
+        display: none;
+    }
+   
     #foto img {
         width: 30%;
     }
@@ -230,6 +240,10 @@ footer {
 
 /*desktop*/
 @media (min-width: 1200px) {
+
+    #menuIcon{
+        display: none;
+    }
 
 
     ul {
@@ -278,10 +292,7 @@ footer {
         padding-left: 0;
     }
 
-    #contacto{
-
-    }
-    
+       
     h2 {
         font-size: 32px;
 
@@ -301,7 +312,7 @@ footer {
 
     #contacto {
         min-height: 50vh;
-        margin-top: 130px;
+        margin-top: 230px;
     }
 
 
