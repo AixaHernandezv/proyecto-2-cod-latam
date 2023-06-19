@@ -77,7 +77,7 @@ header {
 }
 
 #logo img {
-    /* width: 78px; */
+    
     width: 150px;
 }
 
@@ -205,6 +205,9 @@ footer {
 /* Medias Queries */
 
 @media (max-width:767px) {
+    body{
+        font-size: 16px;
+    }
 
     #menuIcon{
         margin-right: 24px;
@@ -213,6 +216,16 @@ footer {
     #navBar{
         display: none;
     }
+
+    #navBarMobile{
+        width: fit-content;
+        display: none;
+    }
+
+    #navBarMobile > ul{
+        flex-direction: column;
+    }
+
 
    
     #foto img {
@@ -333,6 +346,5 @@ footer {
         min-height: 50vh;
         margin-top: 230px;
     }
-
 
 }
