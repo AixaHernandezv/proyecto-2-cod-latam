@@ -97,7 +97,7 @@ ul {
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
     text-decoration: none;
-    color: inherit;
+   /*  color: inherit; */
 }
 
 .menu-item:hover {
@@ -219,7 +219,14 @@ footer {
 
     #navBarMobile{
         width: fit-content;
+    }
+
+    .menu-mobile {
         display: none;
+    }
+
+    .menu-mobile-active {
+        display: block;
     }
 
     #navBarMobile > ul{
@@ -241,6 +248,12 @@ footer {
     .rrss {
         margin-right: 24px;
     }
+
+    #darkModeBtn{
+        display: none;
+        
+            }
+  
 
 }
 
@@ -273,6 +286,9 @@ footer {
 @media (min-width: 1200px) {
 
     #menuIcon{
+        display: none;
+    }
+    #navBarMobile{
         display: none;
     }
 
@@ -345,6 +361,10 @@ footer {
     #contacto {
         min-height: 50vh;
         margin-top: 230px;
-    }
 
+    }
+.dark-mode-body{
+    background-color: black;
+    color: white;
 }
+ }

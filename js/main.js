@@ -10,3 +10,25 @@ menuItems.forEach((item )=> {
     })
     
 });
+
+//menú hamburguesa en mobile lograr que al hacer click en el icono aparezca el menú 
+//para esto debo seleccionar el icono y el menú
+
+const menuIcon = document.querySelector('#menuIcon');
+const navBarMobile = document.querySelector('#navBarMobile');
+menuIcon.addEventListener('click', (e) =>{
+    /* const navbarMobileDisplayStatus = navBarMobile.style.display;
+    navBarMobile.style.display = (!navbarMobileDisplayStatus || navbarMobileDisplayStatus === 'none') 
+    ? 'flex' 
+    : 'none'; */
+    navBarMobile.classList.toggle('menu-mobile-active');
+});
+
+const darkModeBtnElement = document.querySelector('#darkModeBtn');
+const bodyAllElement = document.querySelector('#bodyAll');
+darkModeBtnElement.addEventListener('click', (e)=> {
+
+    bodyAllElement.classList.toggle('dark-mode-body');
+
+
+})
