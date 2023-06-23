@@ -26,9 +26,11 @@ menuIcon.addEventListener('click', (e) =>{
 
 const darkModeBtnElement = document.querySelector('#darkModeBtn');
 const bodyAllElement = document.querySelector('#bodyAll');
+const headerElement = document.querySelector('#header')
 darkModeBtnElement.addEventListener('click', (e)=> {
 
     bodyAllElement.classList.toggle('dark-mode-body');
+    headerElement.classList.toggle('dark-mode-body')
 
 
 })
