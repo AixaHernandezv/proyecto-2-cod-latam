@@ -13,6 +13,7 @@
     >
     <script src="https://kit.fontawesome.com/e10d5b30c3.js" crossorigin="anonymous"></script>
     <title>Aixa Hernández</title>
+    <link rel="shortcut icon" href="./img/rocket3.png">
     
 
     <!-- CSS -->
@@ -24,39 +25,34 @@
 
 <body id="bodyAll">
     <header id="header"  class="altura" >
-        <figure id="logo">
-            <img
-                src="./img/Eidos.png"
-                alt="Logo Aixa"
-            >
-        </figure>
-        <nav id="navBarMobile" class="menu-mobile">
-            <ul>
-                <li class="menu-item">
-                    <a href="#inicio" class="active">Inicio</a><!-- por defecto active se la pongo a inicio -->
-                </li>
-                <li class="menu-item">
-                    <a href="#contacto">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <span class="logo">Aixa Hernández</span>
         
-        <i id="menuIcon" class="fa-solid fa-bars"></i>
-       
-        <nav id="navBar">
-            
-            <ul>
-                <li class="menu-item">
-                    <a href="#inicio" class="active">Inicio</a><!-- por defecto active se la pongo a inicio -->
-                </li>
-                <li class="menu-item">
-                    <a href="#contacto">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <button type="button" id="darkModeBtn">
-            dark
-        </button>
+        <div class="nav-container">
+            <nav id="navBar" class="navbar-desktop" >
+                <ul>
+                    <li class="menu-item">
+                        <a href="#inicio" class="active">Inicio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <i id="menuIcon" class="fa-solid fa-bars"></i>
+        </div>
+        
+        <div class="dark-mode-container">
+            <div class="dark-mode-switch-container" id="darkModeContainer">
+                <span>
+                    <input type="radio" name="switch" id="on">
+                    <label class="switch" for="on">ON</label>
+                </span>
+                <span>
+                    <input type="radio" name="switch" id="off">
+                    <label class="switch" for="off">OFF</label>
+                </span>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -84,8 +80,9 @@
                 <a
                     id="boton"
                     class="fondo-color-fuente"
-                    href="./assets/cv-achv.txt"
-                    download
+                    href="https://drive.google.com/file/d/1KeguX-QQ_IZp9kHQML6qBcUbPNCRBj09/view?usp=drive_link"
+                    download 
+                    target="_blank"
                 >Descargar mi CV</a>
             </div>
         </section>
@@ -98,7 +95,7 @@
                 <p>¿Cómo puedo ayudarte? Si tienes alguna pregunta o propuesta, no dudes en ponerte
                     en contacto conmigo, te responderé a la brevedad posible.</p>
             </article>
-            <div>
+            <div class="rrss-container">
                 <a
                     href="mailto:aixahernandezv@gmail.com"
                     target="_blank"
