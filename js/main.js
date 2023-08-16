@@ -37,6 +37,7 @@ onSwitch.addEventListener('click',(e)  => {
         onLabel.style.color = "#98f195";
         bodyAllElement.classList.toggle('dark-mode-body');
         headerElement.classList.toggle('dark-mode-body');
+        
 });
 
 offSwitch.addEventListener('click',()  => {

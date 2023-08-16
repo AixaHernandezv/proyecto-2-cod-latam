@@ -89,6 +89,7 @@ header {
 
 .dark-mode-container {
     width: 10%;
+    margin-right: 16px;
 }
 
 .dark-mode-switch-container {
@@ -99,7 +100,7 @@ header {
     width: 4em;
     border-radius: 1.5em;
     margin: 0;
-    margin-right: 10px;
+   /*  margin-right: 20px; */
     background: linear-gradient( to right,#4b4b4b, #111111);
     box-shadow: inset 0.45em 0 0.45em #171717;
     transition: 0.3s;
@@ -220,10 +221,13 @@ article {
 }
 
 .rrss {
-    width: 40px;
-
-
+    color:  #6334bc;
+    font-size: 40px;
+    @media(max-width: 767px) {
+        font-size: 24px;
+    }
 }
+
 
 footer {
     display: flex;
@@ -233,6 +237,12 @@ footer {
 
 .rrss-container {
     margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    column-gap: 64px;
+    @media(max-width: 767px) {
+        column-gap: 32px;
+    }
 }
 
 
@@ -273,16 +283,6 @@ footer {
         width: 35%;
     }
 
-    .rrss-container {
-        margin-top: 36px;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .rrss {
-        margin-right: 24px;
-    }
 
     #darkModeBtn{
         display: none;
@@ -390,9 +390,7 @@ footer {
         justify-content: center;
     }
 
-    .rrss {
-        margin-right: 50px;
-    }
+    
 
     #contacto {
         min-height: 50vh;
